@@ -1,39 +1,106 @@
-/*  your css code here. If applicable */
-:root {
-            --wrapper-border-radius: 12px;
-            --wrapper-padding: 12px;
-            --wrapper-background-color: #e0e0e0;
-            
-            /* Circle */
-            --circle-width: 30px;
-            --circle-radius: calc(var(--circle-width) / 2);
-            --circle-border-width: 4px;
-            --circle-bottom-margin: 8px;
-            --circle-font-size: 24px;
-            
-            /* Selected Circle */
-            --selected-background-color: #279600;
-            
-            /* Divider Line */
-            --divider-line-height: 4px;
-            
-            /* Product Offering */
-            --product-offering-height: 40px;
-            --product-offering-padding: 12px;
-            --product-offering-vertical-margin: 12px;
-            --product-offering-border-radius: 8px;
-            --product-offering-left-border-size: 5px;
-            
-            /* Product Colors */
-            --label-left-margin: 4px;
-            --blue-product-color: #626ee3;
-            --red-product-color: #890023;
-            --orange-product-color: #f37f1b;
-            --green-product-color: #11967e;
-            
-            /* Button */
-            --button-padding: 12px;
-            --button-font-size: 16px;
-            --button-border-radius: 8px;
-            --button-background-color: #02203c;
+  body {
+            font-family: Arial, sans-serif;
+        }
+        #wrapper {
+            padding: 12px;
+            border-radius: 12px;
+            background-color: #e0e0e0;
+        }
+
+    
+        .stepper {
+            text-align: center;
+            list-style: none;
+            margin: 20px auto;
+            padding: 0;
+        }
+
+        .stepper li {
+            display: inline-block;
+            margin-right: 30px;
+            position: relative;
+        }
+
+        .stepper li::before {
+            content: attr(data-step);
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 8px 0;
+            font-size: 24px;
+            border: 4px solid black;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            background-color: #fff;
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .stepper .selected::before {
+            color: #fff;
+            background-color: #279600;
+        }
+
+        .divider {
+            width: 30px;
+            height: 4px;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            left: calc(50% + 15px);
+            transform: translateY(-50%);
+        }
+
+    
+        ul {
+            list-style: none;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        li.product-offering {
+            padding: 12px;
+            margin: 12px 0;
+            height: 40px;
+            border-radius: 8px;
+            font-weight: bold;
+            background-color: #fff;
+            border-left: 5px solid;
+            padding-left: 12px;
+        }
+
+        li.blue-product {
+            color: #626ee3;
+            border-color: #626ee3;
+        }
+
+        li.red-product {
+            color: #890023;
+            border-color: #890023;
+        }
+
+        li.orange-product {
+            color: #f37f1b;
+            border-color: #f37f1b;
+        }
+
+        li.green-product {
+            color: #11967e;
+            border-color: #11967e;
+        }
+
+ 
+        #continue-button {
+            float: right;
+            margin-top: 20px;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            background-color: #02203c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
         }
