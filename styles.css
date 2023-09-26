@@ -1,0 +1,39 @@
+/*  your css code here. If applicable */
+:root {
+            --wrapper-border-radius: 12px;
+            --wrapper-padding: 12px;
+            --wrapper-background-color: #e0e0e0;
+            
+            /* Circle */
+            --circle-width: 30px;
+            --circle-radius: calc(var(--circle-width) / 2);
+            --circle-border-width: 4px;
+            --circle-bottom-margin: 8px;
+            --circle-font-size: 24px;
+            
+            /* Selected Circle */
+            --selected-background-color: #279600;
+            
+            /* Divider Line */
+            --divider-line-height: 4px;
+            
+            /* Product Offering */
+            --product-offering-height: 40px;
+            --product-offering-padding: 12px;
+            --product-offering-vertical-margin: 12px;
+            --product-offering-border-radius: 8px;
+            --product-offering-left-border-size: 5px;
+            
+            /* Product Colors */
+            --label-left-margin: 4px;
+            --blue-product-color: #626ee3;
+            --red-product-color: #890023;
+            --orange-product-color: #f37f1b;
+            --green-product-color: #11967e;
+            
+            /* Button */
+            --button-padding: 12px;
+            --button-font-size: 16px;
+            --button-border-radius: 8px;
+            --button-background-color: #02203c;
+        }
